@@ -236,7 +236,7 @@ Grafico di correlazione per gli uomini:
 
 ```{r}   
 
-corrplot(male_cor, method='square', order = 'FPC', type = 'lower', diag=FALSE)
+corrplot(male_cor, method='square', diag=FALSE)
 
 ```
 
@@ -244,7 +244,7 @@ Grafico di correlazione per le donne:
 
 ```{r}
 
-corrplot(female_cor, method='square', order = 'FPC', type = 'lower', diag=FALSE)
+corrplot(female_cor, method='square', diag=FALSE)
 
 ```
 
@@ -282,7 +282,7 @@ In conclusione riporto una mappa complessiva per gli uomini e una per le donne d
 
 Regioni diverse del mondo infatti sembrano avere delle relazioni nel numero dei suicidi nei confronti delle regioni vicine con culture simili o storicamente legate.
 
-Inoltre è possibile osservare come questi elementi culturali colpiscano in modo tendenzialmente diverso uomini e donne
+Inoltre è possibile osservare come questi elementi culturali colpiscano in modo leggermente diverso uomini e donne
 
 Le due mappe riportano la situazione al **1995** data in cui il problema risultava più impattante (da grafico sul sesso).
 ```{r, include = FALSE} 
